@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="DescriptionImage" destination="Tfw-fp-mv8" id="m2y-nU-pNH"/>
                 <outlet property="DescriptionLabel" destination="Pxg-Se-fiH" id="UOv-cJ-Jh1"/>
+                <outlet property="addressLabel" destination="M3P-hJ-xEc" id="Ido-z4-yN6"/>
                 <outlet property="textLabel" destination="EjZ-l3-Q8C" id="y2i-8s-4U8"/>
                 <outlet property="view" destination="ZtO-qk-Gza" id="ML0-IF-E7j"/>
             </connections>
@@ -28,32 +29,44 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Pxg-Se-fiH" userLabel="TextView">
-                    <rect key="frame" x="12" y="389" width="369" height="314"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                    <color key="textColor" systemColor="labelColor"/>
-                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3P-hJ-xEc">
+                    <rect key="frame" x="12" y="394" width="369" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tfw-fp-mv8" userLabel="ImageView">
                     <rect key="frame" x="6" y="71" width="387" height="250"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="250" id="Gh2-XH-2gj"/>
                     </constraints>
                 </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pxg-Se-fiH" userLabel="TextView">
+                    <rect key="frame" x="12" y="465" width="369" height="238"/>
+                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque</mutableString>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Koy-C8-tmR"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" systemColor="systemYellowColor"/>
             <constraints>
+                <constraint firstItem="Pxg-Se-fiH" firstAttribute="top" secondItem="M3P-hJ-xEc" secondAttribute="bottom" constant="50" id="0DS-Vr-Xnu"/>
                 <constraint firstItem="Koy-C8-tmR" firstAttribute="trailing" secondItem="Pxg-Se-fiH" secondAttribute="trailing" constant="12" id="1aF-Ln-0e2"/>
+                <constraint firstItem="M3P-hJ-xEc" firstAttribute="leading" secondItem="Koy-C8-tmR" secondAttribute="leading" constant="12" id="2Oq-WM-Q3n"/>
                 <constraint firstItem="Koy-C8-tmR" firstAttribute="trailing" secondItem="EjZ-l3-Q8C" secondAttribute="trailing" constant="12" id="9XN-ZG-ufB"/>
+                <constraint firstItem="Koy-C8-tmR" firstAttribute="trailing" secondItem="Pxg-Se-fiH" secondAttribute="trailing" constant="12" id="Bbh-Bb-H2Q"/>
                 <constraint firstItem="EjZ-l3-Q8C" firstAttribute="leading" secondItem="Koy-C8-tmR" secondAttribute="leading" constant="12" id="EZh-Lh-7pT"/>
-                <constraint firstItem="Pxg-Se-fiH" firstAttribute="top" secondItem="EjZ-l3-Q8C" secondAttribute="bottom" constant="35" id="N4d-nc-uhE"/>
                 <constraint firstItem="EjZ-l3-Q8C" firstAttribute="top" secondItem="Tfw-fp-mv8" secondAttribute="bottom" constant="12" id="ViS-TR-ihc"/>
+                <constraint firstItem="Pxg-Se-fiH" firstAttribute="top" secondItem="M3P-hJ-xEc" secondAttribute="bottom" constant="50" id="XNK-s8-uTN"/>
+                <constraint firstItem="M3P-hJ-xEc" firstAttribute="top" secondItem="EjZ-l3-Q8C" secondAttribute="bottom" constant="40" id="Z4u-eV-qG6"/>
                 <constraint firstItem="Koy-C8-tmR" firstAttribute="bottom" secondItem="Pxg-Se-fiH" secondAttribute="bottom" constant="115" id="cJ2-4r-Idl"/>
                 <constraint firstItem="Pxg-Se-fiH" firstAttribute="leading" secondItem="Koy-C8-tmR" secondAttribute="leading" constant="12" id="e0N-I6-laN"/>
+                <constraint firstItem="Pxg-Se-fiH" firstAttribute="leading" secondItem="Koy-C8-tmR" secondAttribute="leading" constant="12" id="eON-To-w2C"/>
                 <constraint firstItem="Koy-C8-tmR" firstAttribute="trailing" secondItem="Tfw-fp-mv8" secondAttribute="trailing" id="eu7-Hu-Knb"/>
+                <constraint firstItem="Koy-C8-tmR" firstAttribute="trailing" secondItem="M3P-hJ-xEc" secondAttribute="trailing" constant="12" id="fWs-Ii-TRy"/>
                 <constraint firstItem="Tfw-fp-mv8" firstAttribute="top" secondItem="Koy-C8-tmR" secondAttribute="top" constant="12" id="ho5-Pj-Cej"/>
                 <constraint firstItem="Tfw-fp-mv8" firstAttribute="leading" secondItem="Koy-C8-tmR" secondAttribute="leading" constant="6" id="rU4-Ic-6iM"/>
             </constraints>
@@ -64,8 +77,8 @@
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
