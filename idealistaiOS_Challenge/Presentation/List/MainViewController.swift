@@ -10,7 +10,6 @@ import Kingfisher
 
 class MainViewController: UIViewController {
     
-    
     @IBOutlet weak var tableView: UITableView!
     
     var ads: [ListModel] = []
@@ -19,6 +18,8 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         setupTableView()
         fetchData()
+        
+        title = "Inmuebles"
     }
     
     private func setupTableView() {

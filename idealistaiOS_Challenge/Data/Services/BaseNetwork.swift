@@ -16,11 +16,10 @@ public protocol BaseNetworkProtocol {
 // MARK: - API Manager Implementation
 public class BaseNetwork: BaseNetworkProtocol {
     
-   private let listURL = URL(string: "https://idealista.github.io/ios-challenge/list.json")!
-   
+    private let listURL = URL(string: "https://idealista.github.io/ios-challenge/list.json")!
+    
     private let detailURL = URL(string: "https://idealista.github.io/ios-challenge/detail.json")!
     
-    // MARK: - Fetch List
     public func fetchAdList(completion: ((Result<[ListModel], APIError>) -> Void)?) {
         var urlRequest = URLRequest(url: listURL)
         urlRequest.httpMethod = "GET"
@@ -52,8 +51,7 @@ public class BaseNetwork: BaseNetworkProtocol {
         task.resume()
     }
     
-    // MARK: - Fetch Ad Detail
-    public func fetchAdDetail(completion: ((Result<DetailsModel, APIError>) -> Void)?) {
+   public func fetchAdDetail(completion: ((Result<DetailsModel, APIError>) -> Void)?) {
         var urlRequest = URLRequest(url: detailURL)
         urlRequest.httpMethod = "GET"
         

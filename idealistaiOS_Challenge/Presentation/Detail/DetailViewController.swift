@@ -11,6 +11,7 @@ class DetailViewController: UIViewController {
    
     @IBOutlet weak var textLabel: UILabel!
     
+    @IBOutlet weak var addressLabel: UILabel!
     
     @IBOutlet weak var DescriptionLabel: UITextView!
     
@@ -29,7 +30,7 @@ class DetailViewController: UIViewController {
     func configure(with ad: ListModel) {
            
             let formatter = NumberFormatter()
-            formatter.numberStyle = .currency
+            formatter.numberStyle = .decimal
             formatter.locale = Locale(identifier: "es_ES")
             formatter.currencySymbol = "€"
             
@@ -38,6 +39,7 @@ class DetailViewController: UIViewController {
             }
             
             DescriptionLabel.text = ad.description
+            addressLabel.text = ad.address
                
             if let imageUrl = URL(string: ad.thumbnail) {
                 DescriptionImage.kf.setImage(with: imageUrl)
