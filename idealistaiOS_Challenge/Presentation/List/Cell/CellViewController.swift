@@ -47,6 +47,6 @@ class CellViewController: UITableViewCell {
         
        
         self.isAccessibilityElement = true
-        self.accessibilityElements = [propertyImage, titleLabel, priceLabel, floorLabel, descriptionLabel]
+        self.accessibilityElements = [propertyImage ?? "No image", titleLabel ?? "No Title", priceLabel ?? "0", floorLabel ?? "No information", descriptionLabel ?? ""]
     }
 }
