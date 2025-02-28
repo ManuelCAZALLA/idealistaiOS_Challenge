@@ -11,9 +11,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="idealistaiOS_Challenge" customModuleProvider="target">
             <connections>
-                <outlet property="DescriptionImage" destination="Tfw-fp-mv8" id="m2y-nU-pNH"/>
-                <outlet property="DescriptionLabel" destination="Pxg-Se-fiH" id="UOv-cJ-Jh1"/>
-                <outlet property="textLabel" destination="EjZ-l3-Q8C" id="y2i-8s-4U8"/>
+                <outlet property="addressLabel" destination="PHi-iV-FJd" id="ec1-Ui-OhI"/>
+                <outlet property="collectionView" destination="OO6-47-dVH" id="a8x-dp-5Hh"/>
+                <outlet property="descriptionLabel" destination="Pxg-Se-fiH" id="IO4-Dc-aUX"/>
+                <outlet property="favoriteButton" destination="U3z-ll-hlo" id="PWd-pE-Kv8"/>
+                <outlet property="textLabel" destination="EjZ-l3-Q8C" id="1nm-kF-r4I"/>
                 <outlet property="view" destination="ZtO-qk-Gza" id="ML0-IF-E7j"/>
             </connections>
         </placeholder>
@@ -28,44 +30,65 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="OO6-47-dVH">
+                    <rect key="frame" x="6" y="71" width="387" height="250"/>
+                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="876-CN-oYo"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RaF-I2-Qdb">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3z-ll-hlo">
+                    <rect key="frame" x="330.33333333333331" y="318" width="50.666666666666686" height="51"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system"/>
+                </button>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Pxg-Se-fiH" userLabel="TextView">
                     <rect key="frame" x="12" y="389" width="369" height="314"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                    <color key="textColor" systemColor="labelColor"/>
+                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.ñlksdejñlsdkjfsñadlkfjñlasdkjfñlsadkjfñlaskjdfñlkfjñlsadkjfñlsakjsñadflkjfdñlkasjñfsadlkjafsñldksjfdsñlkjadfsñljadfsñlkadfjsñldfsjñadflsadflsññkldfsakljñdfsjklñdfskladfsklñdfsajklñfdsfdsajklñadfsdfsa</mutableString>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tfw-fp-mv8" userLabel="ImageView">
-                    <rect key="frame" x="6" y="71" width="387" height="250"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="250" id="Gh2-XH-2gj"/>
-                    </constraints>
-                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHi-iV-FJd">
+                    <rect key="frame" x="12" y="364" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Koy-C8-tmR"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" systemColor="systemYellowColor"/>
             <constraints>
                 <constraint firstItem="Koy-C8-tmR" firstAttribute="trailing" secondItem="Pxg-Se-fiH" secondAttribute="trailing" constant="12" id="1aF-Ln-0e2"/>
+                <constraint firstItem="PHi-iV-FJd" firstAttribute="top" secondItem="EjZ-l3-Q8C" secondAttribute="bottom" constant="10" id="4nf-h4-BEk"/>
                 <constraint firstItem="Koy-C8-tmR" firstAttribute="trailing" secondItem="EjZ-l3-Q8C" secondAttribute="trailing" constant="12" id="9XN-ZG-ufB"/>
                 <constraint firstItem="EjZ-l3-Q8C" firstAttribute="leading" secondItem="Koy-C8-tmR" secondAttribute="leading" constant="12" id="EZh-Lh-7pT"/>
+                <constraint firstItem="Pxg-Se-fiH" firstAttribute="top" secondItem="U3z-ll-hlo" secondAttribute="bottom" constant="20" id="Gf0-JD-gd0"/>
+                <constraint firstItem="OO6-47-dVH" firstAttribute="top" secondItem="Koy-C8-tmR" secondAttribute="top" constant="12" id="I7Z-ij-bd3"/>
                 <constraint firstItem="Pxg-Se-fiH" firstAttribute="top" secondItem="EjZ-l3-Q8C" secondAttribute="bottom" constant="35" id="N4d-nc-uhE"/>
-                <constraint firstItem="EjZ-l3-Q8C" firstAttribute="top" secondItem="Tfw-fp-mv8" secondAttribute="bottom" constant="12" id="ViS-TR-ihc"/>
+                <constraint firstItem="U3z-ll-hlo" firstAttribute="centerY" secondItem="EjZ-l3-Q8C" secondAttribute="centerY" id="S2f-xv-aE3"/>
+                <constraint firstItem="Koy-C8-tmR" firstAttribute="trailing" secondItem="U3z-ll-hlo" secondAttribute="trailing" constant="12" id="StX-wb-iNk"/>
+                <constraint firstItem="OO6-47-dVH" firstAttribute="leading" secondItem="Koy-C8-tmR" secondAttribute="leading" constant="6" id="Suy-fN-yy3"/>
                 <constraint firstItem="Koy-C8-tmR" firstAttribute="bottom" secondItem="Pxg-Se-fiH" secondAttribute="bottom" constant="115" id="cJ2-4r-Idl"/>
                 <constraint firstItem="Pxg-Se-fiH" firstAttribute="leading" secondItem="Koy-C8-tmR" secondAttribute="leading" constant="12" id="e0N-I6-laN"/>
-                <constraint firstItem="Koy-C8-tmR" firstAttribute="trailing" secondItem="Tfw-fp-mv8" secondAttribute="trailing" id="eu7-Hu-Knb"/>
-                <constraint firstItem="Tfw-fp-mv8" firstAttribute="top" secondItem="Koy-C8-tmR" secondAttribute="top" constant="12" id="ho5-Pj-Cej"/>
-                <constraint firstItem="Tfw-fp-mv8" firstAttribute="leading" secondItem="Koy-C8-tmR" secondAttribute="leading" constant="6" id="rU4-Ic-6iM"/>
+                <constraint firstItem="PHi-iV-FJd" firstAttribute="leading" secondItem="EjZ-l3-Q8C" secondAttribute="leading" id="ny4-Qx-YRX"/>
+                <constraint firstItem="EjZ-l3-Q8C" firstAttribute="top" secondItem="OO6-47-dVH" secondAttribute="bottom" constant="12" id="tgc-qD-meC"/>
+                <constraint firstItem="OO6-47-dVH" firstAttribute="trailing" secondItem="Koy-C8-tmR" secondAttribute="trailing" id="uRb-Rt-8NI"/>
             </constraints>
             <point key="canvasLocation" x="-16.030534351145036" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

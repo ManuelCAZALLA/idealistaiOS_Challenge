@@ -57,3 +57,41 @@ struct CertificationDetail: Codable {
     let type: String
 }
 
+extension DetailsModel {
+    init(from listModel: ListModel) {
+        self.adid = Int(listModel.propertyCode) ?? 0
+        self.price = listModel.price
+        self.priceInfo = listModel.priceInfo
+        self.operation = listModel.operation
+        self.propertyType = listModel.propertyType
+        self.extendedPropertyType = ""
+        self.homeType = ""
+        self.state = ""
+        self.multimedia = listModel.multimedia
+        self.propertyComment = listModel.description
+        self.ubication = Ubication(latitude: listModel.latitude, longitude: listModel.longitude)
+        self.country = listModel.country
+        self.moreCharacteristics = MoreCharacteristics(
+            communityCosts: 0.0,
+            roomNumber: listModel.rooms,
+            bathNumber: listModel.bathrooms,
+            exterior: listModel.exterior,
+            housingFurnitures: "",
+            agencyIsABank: false,
+            energyCertificationType: "",
+            flatLocation: listModel.neighborhood,
+            modificationDate: 0,
+            constructedArea: Int(listModel.size),
+            lift: false,
+            boxroom: listModel.features?.hasBoxRoom ?? false,
+            isDuplex: false,
+            floor: listModel.floor,
+            status: "" 
+        )
+        self.energyCertification = EnergyCertification(
+            title: "",
+            energyConsumption: CertificationDetail(type: ""),
+            emissions: CertificationDetail(type: "")
+        )
+    }
+}

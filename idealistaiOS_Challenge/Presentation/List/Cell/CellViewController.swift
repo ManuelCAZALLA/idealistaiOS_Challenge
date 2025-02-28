@@ -11,12 +11,18 @@ import Kingfisher
 class CellViewController: UITableViewCell {
     
     @IBOutlet weak var propertyImage: UIImageView!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var municipalityLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var bathroomsLabel: UILabel!
+    @IBOutlet weak var districtLabel: UILabel!
     
     func configure(with ad: ListModel) {
-        titleLabel.text = ad.municipality
-        descriptionLabel.text = ad.district
+        municipalityLabel.text = ad.municipality
+        addressLabel.text = ad.address
+        districtLabel.text = ad.district
+        bathroomsLabel.text = ad.bathrooms.description + " Hab"
+       
+        
         
         if let imageUrl = URL(string: ad.thumbnail) {
             propertyImage.kf.setImage(with: imageUrl)
