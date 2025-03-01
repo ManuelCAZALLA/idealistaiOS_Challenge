@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,7 +15,7 @@
                 <outlet property="addressLabel" destination="PHi-iV-FJd" id="ec1-Ui-OhI"/>
                 <outlet property="collectionView" destination="OO6-47-dVH" id="a8x-dp-5Hh"/>
                 <outlet property="descriptionLabel" destination="Pxg-Se-fiH" id="IO4-Dc-aUX"/>
-                <outlet property="favoriteButton" destination="U3z-ll-hlo" id="PWd-pE-Kv8"/>
+                <outlet property="favoriteButton" destination="U3z-ll-hlo" id="t5V-w5-8mD"/>
                 <outlet property="textLabel" destination="EjZ-l3-Q8C" id="1nm-kF-r4I"/>
                 <outlet property="view" destination="ZtO-qk-Gza" id="ML0-IF-E7j"/>
             </connections>
@@ -44,14 +45,19 @@
                     </collectionViewFlowLayout>
                 </collectionView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3z-ll-hlo">
-                    <rect key="frame" x="330.33333333333331" y="318" width="50.666666666666686" height="51"/>
+                    <rect key="frame" x="336.33333333333331" y="318" width="44.666666666666686" height="51"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <imageReference key="image" image="heart" catalog="system" symbolScale="medium"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="favoriteButtonTapped:" destination="-1" eventType="touchUpInside" id="png-3s-zdA"/>
+                    </connections>
                 </button>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Pxg-Se-fiH" userLabel="TextView">
                     <rect key="frame" x="12" y="389" width="369" height="314"/>
                     <color key="backgroundColor" systemColor="systemYellowColor"/>
-                    <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.ñlksdejñlsdkjfsñadlkfjñlasdkjfñlsadkjfñlaskjdfñlkfjñlsadkjfñlsakjsñadflkjfdñlkasjñfsadlkjafsñldksjfdsñlkjadfsñljadfsñlkadfjsñldfsjñadflsadflsññkldfsakljñdfsjklñdfskladfsklñdfsajklñfdsfdsajklñadfsdfsa</mutableString>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.ñlksdejñlsdkjfsñadlkfjñlasdkjfñlsadkjfñlaskjdfñlkfjñlsadkjfñlsakjsñadflkjfdñlkasjñfsadlkjafsñldksjfdsñlkjadfsñljadfsñlkadfjsñldfsjñadflsadflsññkldfsakljñdfsjklñdfskladfsklñdfsajklñfdsfdsajklñadfsdfsa</string>
                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

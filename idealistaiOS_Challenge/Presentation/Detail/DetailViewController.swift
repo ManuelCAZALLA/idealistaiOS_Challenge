@@ -14,8 +14,10 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UITextView!
-    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var favoriteButton: UIButton!
+    @IBOutlet weak var collectionView: UICollectionView!
+   
+    
     
     var ad: DetailsModel?
     
@@ -42,8 +44,7 @@ class DetailViewController: UIViewController {
         layout.scrollDirection = .horizontal
         collectionView.collectionViewLayout = layout
         
-       
-        collectionView.register(UINib(nibName: "CellCollectionView", bundle: nil), forCellWithReuseIdentifier: "imageCell")
+       collectionView.register(UINib(nibName: "CellCollectionView", bundle: nil), forCellWithReuseIdentifier: "imageCell")
     }
 
     
@@ -63,6 +64,7 @@ class DetailViewController: UIViewController {
     }
     
     // MARK: - Gestión de Favoritos
+  
     @IBAction func favoriteButtonTapped(_ sender: UIButton) {
         sender.isSelected.toggle()
         sender.isSelected ? saveFavorite() : removeFavorite()
