@@ -22,8 +22,6 @@ class CellViewController: UITableViewCell {
         districtLabel.text = ad.district
         bathroomsLabel.text = ad.bathrooms.description + " Hab"
        
-        
-        
         if let imageUrl = URL(string: ad.thumbnail) {
             propertyImage.kf.setImage(with: imageUrl)
         }
