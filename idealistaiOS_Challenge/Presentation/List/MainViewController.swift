@@ -18,7 +18,6 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         setupTableView()
         fetchData()
-        
         title = "Inmuebles"
     }
     
@@ -65,5 +64,4 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
         detailVC.ad = selectedAd
         navigationController?.pushViewController(detailVC, animated: true)
     }
-     
 }
