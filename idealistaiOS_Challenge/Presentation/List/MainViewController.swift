@@ -60,7 +60,7 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let selectedAd = ads[indexPath.row]
+        let selectedAd = DetailsModel(from: ads[indexPath.row]) 
         let detailVC = DetailViewController(nibName: "Detail", bundle: nil)
         detailVC.ad = selectedAd
         navigationController?.pushViewController(detailVC, animated: true)
