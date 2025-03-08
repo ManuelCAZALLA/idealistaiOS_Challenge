@@ -16,6 +16,7 @@
                 <outlet property="collectionView" destination="OO6-47-dVH" id="a8x-dp-5Hh"/>
                 <outlet property="descriptionLabel" destination="Pxg-Se-fiH" id="IO4-Dc-aUX"/>
                 <outlet property="favoriteButton" destination="U3z-ll-hlo" id="t5V-w5-8mD"/>
+                <outlet property="mapButton" destination="GSh-6D-WAK" id="dSC-hA-hfw"/>
                 <outlet property="textLabel" destination="EjZ-l3-Q8C" id="1nm-kF-r4I"/>
                 <outlet property="view" destination="ZtO-qk-Gza" id="ML0-IF-E7j"/>
             </connections>
@@ -68,6 +69,14 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSh-6D-WAK" userLabel="MapButton">
+                    <rect key="frame" x="128" y="733" width="137" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="tinted" title="Ver en el mapa"/>
+                    <connections>
+                        <action selector="mapButton:" destination="-1" eventType="touchUpInside" id="5zp-b5-uRV"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Koy-C8-tmR"/>
             <color key="backgroundColor" systemColor="systemYellowColor"/>
@@ -75,6 +84,7 @@
                 <constraint firstItem="Koy-C8-tmR" firstAttribute="trailing" secondItem="Pxg-Se-fiH" secondAttribute="trailing" constant="12" id="1aF-Ln-0e2"/>
                 <constraint firstItem="PHi-iV-FJd" firstAttribute="top" secondItem="EjZ-l3-Q8C" secondAttribute="bottom" constant="10" id="4nf-h4-BEk"/>
                 <constraint firstItem="Koy-C8-tmR" firstAttribute="trailing" secondItem="EjZ-l3-Q8C" secondAttribute="trailing" constant="12" id="9XN-ZG-ufB"/>
+                <constraint firstItem="GSh-6D-WAK" firstAttribute="centerX" secondItem="Pxg-Se-fiH" secondAttribute="centerX" id="BKX-4U-XbO"/>
                 <constraint firstItem="EjZ-l3-Q8C" firstAttribute="leading" secondItem="Koy-C8-tmR" secondAttribute="leading" constant="12" id="EZh-Lh-7pT"/>
                 <constraint firstItem="Pxg-Se-fiH" firstAttribute="top" secondItem="U3z-ll-hlo" secondAttribute="bottom" constant="20" id="Gf0-JD-gd0"/>
                 <constraint firstItem="OO6-47-dVH" firstAttribute="top" secondItem="Koy-C8-tmR" secondAttribute="top" constant="12" id="I7Z-ij-bd3"/>
@@ -87,6 +97,7 @@
                 <constraint firstItem="PHi-iV-FJd" firstAttribute="leading" secondItem="EjZ-l3-Q8C" secondAttribute="leading" id="ny4-Qx-YRX"/>
                 <constraint firstItem="EjZ-l3-Q8C" firstAttribute="top" secondItem="OO6-47-dVH" secondAttribute="bottom" constant="12" id="tgc-qD-meC"/>
                 <constraint firstItem="OO6-47-dVH" firstAttribute="trailing" secondItem="Koy-C8-tmR" secondAttribute="trailing" id="uRb-Rt-8NI"/>
+                <constraint firstItem="GSh-6D-WAK" firstAttribute="top" secondItem="Pxg-Se-fiH" secondAttribute="bottom" constant="30" id="xdg-6Z-p9Z"/>
             </constraints>
             <point key="canvasLocation" x="-16.030534351145036" y="19.718309859154932"/>
         </view>
