@@ -17,6 +17,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var mapButton: UIButton!
     var ad: DetailsModel?
     
     override func viewDidLoad() {
@@ -76,7 +77,17 @@ class DetailViewController: UIViewController {
         guard let adID = ad?.adid else { return }
         FavoritesManager.shared.removeFavorite(adID: Int32(adID))
     }
-}
+    
+    @IBAction func mapButton(_ sender: Any) {
+      guard let ad = ad else { return }
+            
+            let mapVC = MapViewController()
+            mapVC.property = ad
+            navigationController?.pushViewController(mapVC, animated: true)
+        }
+
+    }
+
 
 // MARK: - UICollectionViewDataSource & Delegate
 extension DetailViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
