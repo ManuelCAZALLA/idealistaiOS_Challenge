@@ -8,6 +8,7 @@
 import UIKit
 import CoreData
 import Kingfisher
+import SwiftUI
 
 class DetailViewController: UIViewController {
     
@@ -79,17 +80,18 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func mapButton(_ sender: Any) {
-      guard let ad = ad else { return }
-            
-            let mapVC = MapViewController()
-            mapVC.property = ad
-            navigationController?.pushViewController(mapVC, animated: true)
-        }
-
+        guard let ad = ad else { return }
+        
+        let mapVC = MapViewController()
+        mapVC.property = ad
+        navigationController?.pushViewController(mapVC, animated: true)
     }
+    
+}
 
 
 // MARK: - UICollectionViewDataSource & Delegate
+
 extension DetailViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return ad?.multimedia.images.count ?? 0
@@ -111,8 +113,13 @@ extension DetailViewController: UICollectionViewDataSource, UICollectionViewDele
         return cell
     }
     
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width * 0.8, height: collectionView.frame.height)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let images = ad?.multimedia.images.map({ $0.url }) else { return }
+        let imagePreviewVC = UIHostingController(rootView: ImagePreviewView(imageUrls: images))
+        present(imagePreviewVC, animated: true, completion: nil)
     }
 }
