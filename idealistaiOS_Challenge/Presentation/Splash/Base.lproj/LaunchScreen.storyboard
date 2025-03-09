@@ -17,32 +17,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inmuebles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mB-BJ-lVn">
-                                <rect key="frame" x="99" y="398" width="194" height="57"/>
-                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mB-BJ-lVn">
+                                <rect key="frame" x="99" y="397" width="195" height="58"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="56"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.61493234539999997" green="0.48763261270000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="GtW-wb-w4A">
-                                <rect key="frame" x="186" y="291" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="GtW-wb-w4A">
+                                <rect key="frame" x="168" y="190" width="57" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="Yg2-fp-yCG"/>
+                                    <constraint firstAttribute="width" constant="57" id="d9p-xl-zoi"/>
+                                </constraints>
                                 <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cargando Inmuebles Disponibles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tO-NT-i2m">
+                                <rect key="frame" x="45" y="714.33333333333337" width="303" height="18.666666666666629"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7mB-BJ-lVn" secondAttribute="trailing" constant="100" id="QT6-U9-GLg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7mB-BJ-lVn" secondAttribute="bottom" constant="363" id="RgL-xS-TOu"/>
-                            <constraint firstItem="7mB-BJ-lVn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="99" id="Wc0-4J-sSW"/>
-                            <constraint firstItem="7mB-BJ-lVn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="339" id="eQf-ng-2aC"/>
+                            <constraint firstItem="7mB-BJ-lVn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="99" id="3gj-pG-zdD"/>
+                            <constraint firstItem="GtW-wb-w4A" firstAttribute="centerX" secondItem="7mB-BJ-lVn" secondAttribute="centerX" id="PWa-p3-dm3"/>
+                            <constraint firstItem="7mB-BJ-lVn" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Rn9-1x-B5f"/>
+                            <constraint firstItem="GtW-wb-w4A" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="TZB-PB-rjA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7mB-BJ-lVn" secondAttribute="bottom" constant="363" id="TcD-ll-6LU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9tO-NT-i2m" secondAttribute="bottom" constant="85" id="UyO-UC-8Es"/>
+                            <constraint firstItem="GtW-wb-w4A" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="131" id="Zfi-yY-bLR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9tO-NT-i2m" secondAttribute="trailing" constant="45" id="aRL-mg-SVC"/>
+                            <constraint firstItem="9tO-NT-i2m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="pmt-nD-VkN"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
         </scene>
     </scenes>
     <resources>

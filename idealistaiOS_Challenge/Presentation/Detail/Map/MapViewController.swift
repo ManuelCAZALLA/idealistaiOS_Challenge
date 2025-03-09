@@ -31,7 +31,7 @@ class MapViewController: UIViewController {
 
         let annotation = MKPointAnnotation()
         annotation.coordinate = location
-        annotation.title = "Inmueble en \(property.moreCharacteristics.flatLocation)"
+        annotation.title = "Inmueble en \(property.extendedPropertyType)"
         annotation.subtitle = "Precio: \(property.price)€"
 
         mapView.addAnnotation(annotation)
