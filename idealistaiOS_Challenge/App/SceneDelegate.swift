@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+class SceneDelegate: UIResponder, UIWindowSceneDelegate, SplashViewControllerDelegate {
 
     var window: UIWindow?
 
@@ -21,10 +21,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window.windowScene = windowScene
         
-       let splashViewController = SplashViewController()
+        let splashViewController = SplashViewController()
+        splashViewController.delegate = self
         window.rootViewController = splashViewController
         
         self.window = window
         window.makeKeyAndVisible()
+    }
+
+    func didFinishSplashScreen() {
+        let mainVC = MainViewController(nibName: "Main", bundle: nil)
+        let navigationController = UINavigationController(rootViewController: mainVC)
+        navigationController.modalPresentationStyle = .fullScreen
+        
+        window?.rootViewController = navigationController
     }
 }
