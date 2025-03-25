@@ -86,7 +86,6 @@ class DetailViewController: UIViewController {
         mapVC.property = ad
         navigationController?.pushViewController(mapVC, animated: true)
     }
-    
 }
 
 
