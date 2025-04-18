@@ -1,0 +1,462 @@
+[
+  {
+    "propertyCode": "PROP1000",
+    "thumbnail": "https://www.idealista.com/images/PROP1000.jpg",
+    "floor": "2ª",
+    "price": 200000,
+    "priceInfo": {
+      "price": {
+        "amount": 200000,
+        "currencySuffix": "€"
+      }
+    },
+    "propertyType": "flat",
+    "operation": "sale",
+    "size": 80,
+    "exterior": true,
+    "rooms": 2,
+    "bathrooms": 1,
+    "address": "Calle Ficticia 1",
+    "province": "Madrid",
+    "municipality": "Madrid",
+    "district": "Centro",
+    "country": "España",
+    "neighborhood": "Sol",
+    "latitude": 40.4168,
+    "longitude": -3.7038,
+    "description": "Inmueble de ejemplo número 1.",
+    "multimedia": {
+      "images": [
+        {
+          "url": "https://www.idealista.com/images/PROP1000_1.jpg",
+          "tag": "front"
+        },
+        {
+          "url": "https://www.idealista.com/images/PROP1000_2.jpg",
+          "tag": "livingroom"
+        }
+      ]
+    },
+    "features": {
+      "hasAirConditioning": true,
+      "hasBoxRoom": true,
+      "hasSwimmingPool": true,
+      "hasTerrace": false,
+      "hasGarden": true
+    }
+  },
+  {
+    "propertyCode": "PROP1001",
+    "thumbnail": "https://www.idealista.com/images/PROP1001.jpg",
+    "floor": "2ª",
+    "price": 210000,
+    "priceInfo": {
+      "price": {
+        "amount": 210000,
+        "currencySuffix": "€"
+      }
+    },
+    "propertyType": "flat",
+    "operation": "sale",
+    "size": 85,
+    "exterior": false,
+    "rooms": 3,
+    "bathrooms": 2,
+    "address": "Calle Ficticia 2",
+    "province": "Madrid",
+    "municipality": "Madrid",
+    "district": "Centro",
+    "country": "España",
+    "neighborhood": "Sol",
+    "latitude": 40.4178,
+    "longitude": -3.7028000000000003,
+    "description": "Inmueble de ejemplo número 2.",
+    "multimedia": {
+      "images": [
+        {
+          "url": "https://www.idealista.com/images/PROP1001_1.jpg",
+          "tag": "front"
+        },
+        {
+          "url": "https://www.idealista.com/images/PROP1001_2.jpg",
+          "tag": "livingroom"
+        }
+      ]
+    },
+    "features": {
+      "hasAirConditioning": false,
+      "hasBoxRoom": false,
+      "hasSwimmingPool": false,
+      "hasTerrace": true,
+      "hasGarden": false
+    }
+  },
+  {
+    "propertyCode": "PROP1002",
+    "thumbnail": "https://www.idealista.com/images/PROP1002.jpg",
+    "floor": "2ª",
+    "price": 220000,
+    "priceInfo": {
+      "price": {
+        "amount": 220000,
+        "currencySuffix": "€"
+      }
+    },
+    "propertyType": "flat",
+    "operation": "sale",
+    "size": 90,
+    "exterior": true,
+    "rooms": 4,
+    "bathrooms": 1,
+    "address": "Calle Ficticia 3",
+    "province": "Madrid",
+    "municipality": "Madrid",
+    "district": "Centro",
+    "country": "España",
+    "neighborhood": "Sol",
+    "latitude": 40.418800000000005,
+    "longitude": -3.7018000000000004,
+    "description": "Inmueble de ejemplo número 3.",
+    "multimedia": {
+      "images": [
+        {
+          "url": "https://www.idealista.com/images/PROP1002_1.jpg",
+          "tag": "front"
+        },
+        {
+          "url": "https://www.idealista.com/images/PROP1002_2.jpg",
+          "tag": "livingroom"
+        }
+      ]
+    },
+    "features": {
+      "hasAirConditioning": true,
+      "hasBoxRoom": false,
+      "hasSwimmingPool": false,
+      "hasTerrace": false,
+      "hasGarden": false
+    }
+  },
+  {
+    "propertyCode": "PROP1003",
+    "thumbnail": "https://www.idealista.com/images/PROP1003.jpg",
+    "floor": "2ª",
+    "price": 230000,
+    "priceInfo": {
+      "price": {
+        "amount": 230000,
+        "currencySuffix": "€"
+      }
+    },
+    "propertyType": "flat",
+    "operation": "sale",
+    "size": 95,
+    "exterior": false,
+    "rooms": 2,
+    "bathrooms": 2,
+    "address": "Calle Ficticia 4",
+    "province": "Madrid",
+    "municipality": "Madrid",
+    "district": "Centro",
+    "country": "España",
+    "neighborhood": "Sol",
+    "latitude": 40.4198,
+    "longitude": -3.7008,
+    "description": "Inmueble de ejemplo número 4.",
+    "multimedia": {
+      "images": [
+        {
+          "url": "https://www.idealista.com/images/PROP1003_1.jpg",
+          "tag": "front"
+        },
+        {
+          "url": "https://www.idealista.com/images/PROP1003_2.jpg",
+          "tag": "livingroom"
+        }
+      ]
+    },
+    "features": {
+      "hasAirConditioning": false,
+      "hasBoxRoom": true,
+      "hasSwimmingPool": false,
+      "hasTerrace": true,
+      "hasGarden": false
+    }
+  },
+  {
+    "propertyCode": "PROP1004",
+    "thumbnail": "https://www.idealista.com/images/PROP1004.jpg",
+    "floor": "2ª",
+    "price": 240000,
+    "priceInfo": {
+      "price": {
+        "amount": 240000,
+        "currencySuffix": "€"
+      }
+    },
+    "propertyType": "flat",
+    "operation": "sale",
+    "size": 100,
+    "exterior": true,
+    "rooms": 3,
+    "bathrooms": 1,
+    "address": "Calle Ficticia 5",
+    "province": "Madrid",
+    "municipality": "Madrid",
+    "district": "Centro",
+    "country": "España",
+    "neighborhood": "Sol",
+    "latitude": 40.4208,
+    "longitude": -3.6998,
+    "description": "Inmueble de ejemplo número 5.",
+    "multimedia": {
+      "images": [
+        {
+          "url": "https://www.idealista.com/images/PROP1004_1.jpg",
+          "tag": "front"
+        },
+        {
+          "url": "https://www.idealista.com/images/PROP1004_2.jpg",
+          "tag": "livingroom"
+        }
+      ]
+    },
+    "features": {
+      "hasAirConditioning": true,
+      "hasBoxRoom": false,
+      "hasSwimmingPool": true,
+      "hasTerrace": false,
+      "hasGarden": false
+    }
+  },
+  {
+    "propertyCode": "PROP1005",
+    "thumbnail": "https://www.idealista.com/images/PROP1005.jpg",
+    "floor": "2ª",
+    "price": 250000,
+    "priceInfo": {
+      "price": {
+        "amount": 250000,
+        "currencySuffix": "€"
+      }
+    },
+    "propertyType": "flat",
+    "operation": "sale",
+    "size": 105,
+    "exterior": false,
+    "rooms": 4,
+    "bathrooms": 2,
+    "address": "Calle Ficticia 6",
+    "province": "Madrid",
+    "municipality": "Madrid",
+    "district": "Centro",
+    "country": "España",
+    "neighborhood": "Sol",
+    "latitude": 40.421800000000005,
+    "longitude": -3.6988000000000003,
+    "description": "Inmueble de ejemplo número 6.",
+    "multimedia": {
+      "images": [
+        {
+          "url": "https://www.idealista.com/images/PROP1005_1.jpg",
+          "tag": "front"
+        },
+        {
+          "url": "https://www.idealista.com/images/PROP1005_2.jpg",
+          "tag": "livingroom"
+        }
+      ]
+    },
+    "features": {
+      "hasAirConditioning": false,
+      "hasBoxRoom": false,
+      "hasSwimmingPool": false,
+      "hasTerrace": true,
+      "hasGarden": true
+    }
+  },
+  {
+    "propertyCode": "PROP1006",
+    "thumbnail": "https://www.idealista.com/images/PROP1006.jpg",
+    "floor": "2ª",
+    "price": 260000,
+    "priceInfo": {
+      "price": {
+        "amount": 260000,
+        "currencySuffix": "€"
+      }
+    },
+    "propertyType": "flat",
+    "operation": "sale",
+    "size": 110,
+    "exterior": true,
+    "rooms": 2,
+    "bathrooms": 1,
+    "address": "Calle Ficticia 7",
+    "province": "Madrid",
+    "municipality": "Madrid",
+    "district": "Centro",
+    "country": "España",
+    "neighborhood": "Sol",
+    "latitude": 40.4228,
+    "longitude": -3.6978000000000004,
+    "description": "Inmueble de ejemplo número 7.",
+    "multimedia": {
+      "images": [
+        {
+          "url": "https://www.idealista.com/images/PROP1006_1.jpg",
+          "tag": "front"
+        },
+        {
+          "url": "https://www.idealista.com/images/PROP1006_2.jpg",
+          "tag": "livingroom"
+        }
+      ]
+    },
+    "features": {
+      "hasAirConditioning": true,
+      "hasBoxRoom": true,
+      "hasSwimmingPool": false,
+      "hasTerrace": false,
+      "hasGarden": false
+    }
+  },
+  {
+    "propertyCode": "PROP1007",
+    "thumbnail": "https://www.idealista.com/images/PROP1007.jpg",
+    "floor": "2ª",
+    "price": 270000,
+    "priceInfo": {
+      "price": {
+        "amount": 270000,
+        "currencySuffix": "€"
+      }
+    },
+    "propertyType": "flat",
+    "operation": "sale",
+    "size": 115,
+    "exterior": false,
+    "rooms": 3,
+    "bathrooms": 2,
+    "address": "Calle Ficticia 8",
+    "province": "Madrid",
+    "municipality": "Madrid",
+    "district": "Centro",
+    "country": "España",
+    "neighborhood": "Sol",
+    "latitude": 40.4238,
+    "longitude": -3.6968,
+    "description": "Inmueble de ejemplo número 8.",
+    "multimedia": {
+      "images": [
+        {
+          "url": "https://www.idealista.com/images/PROP1007_1.jpg",
+          "tag": "front"
+        },
+        {
+          "url": "https://www.idealista.com/images/PROP1007_2.jpg",
+          "tag": "livingroom"
+        }
+      ]
+    },
+    "features": {
+      "hasAirConditioning": false,
+      "hasBoxRoom": false,
+      "hasSwimmingPool": false,
+      "hasTerrace": true,
+      "hasGarden": false
+    }
+  },
+  {
+    "propertyCode": "PROP1008",
+    "thumbnail": "https://www.idealista.com/images/PROP1008.jpg",
+    "floor": "2ª",
+    "price": 280000,
+    "priceInfo": {
+      "price": {
+        "amount": 280000,
+        "currencySuffix": "€"
+      }
+    },
+    "propertyType": "flat",
+    "operation": "sale",
+    "size": 120,
+    "exterior": true,
+    "rooms": 4,
+    "bathrooms": 1,
+    "address": "Calle Ficticia 9",
+    "province": "Madrid",
+    "municipality": "Madrid",
+    "district": "Centro",
+    "country": "España",
+    "neighborhood": "Sol",
+    "latitude": 40.424800000000005,
+    "longitude": -3.6958,
+    "description": "Inmueble de ejemplo número 9.",
+    "multimedia": {
+      "images": [
+        {
+          "url": "https://www.idealista.com/images/PROP1008_1.jpg",
+          "tag": "front"
+        },
+        {
+          "url": "https://www.idealista.com/images/PROP1008_2.jpg",
+          "tag": "livingroom"
+        }
+      ]
+    },
+    "features": {
+      "hasAirConditioning": true,
+      "hasBoxRoom": false,
+      "hasSwimmingPool": true,
+      "hasTerrace": false,
+      "hasGarden": false
+    }
+  },
+  {
+    "propertyCode": "PROP1009",
+    "thumbnail": "https://www.idealista.com/images/PROP1009.jpg",
+    "floor": "2ª",
+    "price": 290000,
+    "priceInfo": {
+      "price": {
+        "amount": 290000,
+        "currencySuffix": "€"
+      }
+    },
+    "propertyType": "flat",
+    "operation": "sale",
+    "size": 125,
+    "exterior": false,
+    "rooms": 2,
+    "bathrooms": 2,
+    "address": "Calle Ficticia 10",
+    "province": "Madrid",
+    "municipality": "Madrid",
+    "district": "Centro",
+    "country": "España",
+    "neighborhood": "Sol",
+    "latitude": 40.4258,
+    "longitude": -3.6948000000000003,
+    "description": "Inmueble de ejemplo número 10.",
+    "multimedia": {
+      "images": [
+        {
+          "url": "https://www.idealista.com/images/PROP1009_1.jpg",
+          "tag": "front"
+        },
+        {
+          "url": "https://www.idealista.com/images/PROP1009_2.jpg",
+          "tag": "livingroom"
+        }
+      ]
+    },
+    "features": {
+      "hasAirConditioning": false,
+      "hasBoxRoom": true,
+      "hasSwimmingPool": false,
+      "hasTerrace": true,
+      "hasGarden": false
+    }
+  }
+]
