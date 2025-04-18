@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1000",
+    "bedrooms": 1,
+    "city": "Madrid",
+    "url": "https://www.idealista.com/inmueble/1000/",
+    "price": 150000,
+    "image": "https://www.idealista.com/images/1000.jpg"
+  },
+  {
+    "id": "1001",
+    "bedrooms": 2,
+    "city": "Barcelona",
+    "url": "https://www.idealista.com/inmueble/1001/",
+    "price": 160000,
+    "image": "https://www.idealista.com/images/1001.jpg"
+  },
+  {
+    "id": "1002",
+    "bedrooms": 3,
+    "city": "Valencia",
+    "url": "https://www.idealista.com/inmueble/1002/",
+    "price": 170000,
+    "image": "https://www.idealista.com/images/1002.jpg"
+  },
+  {
+    "id": "1003",
+    "bedrooms": 4,
+    "city": "Sevilla",
+    "url": "https://www.idealista.com/inmueble/1003/",
+    "price": 180000,
+    "image": "https://www.idealista.com/images/1003.jpg"
+  },
+  {
+    "id": "1004",
+    "bedrooms": 5,
+    "city": "Bilbao",
+    "url": "https://www.idealista.com/inmueble/1004/",
+    "price": 190000,
+    "image": "https://www.idealista.com/images/1004.jpg"
+  },
+  {
+    "id": "1005",
+    "bedrooms": 1,
+    "city": "Zaragoza",
+    "url": "https://www.idealista.com/inmueble/1005/",
+    "price": 200000,
+    "image": "https://www.idealista.com/images/1005.jpg"
+  },
+  {
+    "id": "1006",
+    "bedrooms": 2,
+    "city": "Málaga",
+    "url": "https://www.idealista.com/inmueble/1006/",
+    "price": 210000,
+    "image": "https://www.idealista.com/images/1006.jpg"
+  },
+  {
+    "id": "1007",
+    "bedrooms": 3,
+    "city": "Granada",
+    "url": "https://www.idealista.com/inmueble/1007/",
+    "price": 220000,
+    "image": "https://www.idealista.com/images/1007.jpg"
+  },
+  {
+    "id": "1008",
+    "bedrooms": 4,
+    "city": "Alicante",
+    "url": "https://www.idealista.com/inmueble/1008/",
+    "price": 230000,
+    "image": "https://www.idealista.com/images/1008.jpg"
+  },
+  {
+    "id": "1009",
+    "bedrooms": 5,
+    "city": "Valladolid",
+    "url": "https://www.idealista.com/inmueble/1009/",
+    "price": 240000,
+    "image": "https://www.idealista.com/images/1009.jpg"
+  }
+]
