@@ -24,7 +24,7 @@ struct ImagePreviewView: View {
                             .frame(maxWidth: .infinity, maxHeight: .infinity)
                     }
                 }
-                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))  // Indicadores de página en el TabView
+                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always)) 
             }
         }
     }
