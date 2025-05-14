@@ -88,7 +88,6 @@ class DetailViewController: UIViewController {
     }
 }
 
-
 // MARK: - UICollectionViewDataSource & Delegate
 
 extension DetailViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
