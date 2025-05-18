@@ -8,20 +8,23 @@
 import SwiftUI
 
 struct LoginView: View {
-    // Estados para los campos
-    @State private var email: String = ""
-    @State private var password: String = ""
-    @State private var rememberMe: Bool = false
     
+    @ObservedObject var viewModel = LoginViewModel()
+    @State private var rememberMe: Bool = false
+
     var body: some View {
         NavigationView {
             VStack(spacing: 20) {
-                
                 Spacer()
                 
                 VStack(spacing: 16) {
-                   
-                    TextField("Email", text: $email)
+                    
+                    Text("IN")
+                   .font(.custom("Chalkduster", size: 56))
+                    
+                    Spacer()
+
+                   TextField("Email", text: $viewModel.email)
                         .padding()
                         .background(Color.white)
                         .cornerRadius(8)
@@ -33,7 +36,7 @@ struct LoginView: View {
                                 .stroke(Color(hex: "#f8be77"), lineWidth: 1)
                         )
                     
-                SecureField("Contraseña", text: $password)
+                    SecureField("Contraseña", text: $viewModel.password)
                         .padding()
                         .background(Color.white)
                         .cornerRadius(8)
@@ -43,14 +46,14 @@ struct LoginView: View {
                                 .stroke(Color(hex: "#f8be77"), lineWidth: 1)
                         )
                     
-                   Toggle(isOn: $rememberMe) {
+                    Toggle(isOn: $rememberMe) {
                         Text("Recordarme")
-                            .foregroundColor(Color(hex: "#f8be77"))
+                            .foregroundColor(Color.blue)
                     }
                     .padding(.horizontal)
                     
                     Button(action: {
-                       // Accion de login
+                        viewModel.login()
                     }) {
                         Text("Iniciar sesión")
                             .frame(maxWidth: .infinity)
@@ -59,16 +62,41 @@ struct LoginView: View {
                             .foregroundColor(.white)
                             .cornerRadius(8)
                     }
+                    NavigationLink(destination: RegisterView()) {
+                        Text("¿No tienes cuenta? Regístrate")
+                            .foregroundColor(.blue)
+                            .font(.subheadline)
+                    }
                     .padding(.top, 10)
+
+                    Spacer()
+                    
+                    // Mostrar mensaje de respuesta
+                    if !viewModel.responseMessage.isEmpty {
+                        Text(viewModel.responseMessage)
+                            .foregroundColor(viewModel.isLoggedIn ? .green : .red)
+                            .font(.subheadline)
+                            .padding(.top, 10)
+                    }
                 }
                 .padding(.horizontal, 24)
                 
                 Spacer()
+                
+                if viewModel.isLoggedIn {
+                    NavigationLink(
+                        destination: MainViewControllerRepresentable(),
+                        isActive: $viewModel.isLoggedIn
+                    ) {
+                        EmptyView()
+                    }
+                }
             }
-            .background(Color(hex: "#ffe600").ignoresSafeArea()) // Fondo estilo idealista
+            .background(Color(hex: "#ffe600").ignoresSafeArea())
         }
     }
 }
+
 #Preview {
     LoginView()
 }

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "A3D6F8B1-2E4C-4AE3-A779-8C4529A77D22",
+    "nombre": "Manuel",
+    "apellidos": "Cazalla",
+    "email": "manu@demo.com",
+    "password": "1234"
+  },
+  {
+    "id": "B3D6F8B1-2E4C-4AE3-A779-8C4529A77D22",
+    "nombre": "Ana",
+    "apellidos": "Gómez",
+    "email": "ana@demo.com",
+    "password": "abcd"
+  }
+]

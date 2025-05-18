@@ -58,3 +58,19 @@ struct Features: Codable {
     let hasGarden: Bool?
 }
 
+extension ListModel {
+    var displayImageURL: URL? {
+        if let unsplashURL = unsplashImageURL {
+            return unsplashURL
+        } else {
+            return URL(string: thumbnail)
+        }
+    }
+
+   private static var unsplashMap = [String: URL]()
+
+    var unsplashImageURL: URL? {
+        get { Self.unsplashMap[propertyCode] }
+        set { Self.unsplashMap[propertyCode] = newValue }
+    }
+}

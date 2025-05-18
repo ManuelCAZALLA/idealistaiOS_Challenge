@@ -1,8 +1,38 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "¿No tienes cuenta? Regístrate" : {
+
+    },
+    "Apellidos" : {
+
+    },
+    "Contraseña" : {
+
+    },
+    "Email" : {
+
+    },
+    "IN" : {
+
+    },
+    "Iniciar sesión" : {
+
+    },
     "Key" : {
       "extractionState" : "manual"
+    },
+    "Nombre" : {
+
+    },
+    "Recordarme" : {
+
+    },
+    "Registrar" : {
+
+    },
+    "Registro" : {
+
     }
   },
   "version" : "1.0"

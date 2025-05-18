@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate, SplashViewControllerDelegate {
 
@@ -30,10 +31,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, SplashViewControllerDel
     }
 
     func didFinishSplashScreen() {
-        let mainVC = MainViewController(nibName: "Main", bundle: nil)
-        let navigationController = UINavigationController(rootViewController: mainVC)
-        navigationController.modalPresentationStyle = .fullScreen
+        let loginView = LoginView()
+        let hostingController = UIHostingController(rootView: loginView)
+        hostingController.modalPresentationStyle = .fullScreen
         
-        window?.rootViewController = navigationController
+        window?.rootViewController = hostingController
     }
+
 }

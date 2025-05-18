@@ -8,6 +8,7 @@
 import SwiftUI
 
 extension Color {
+    
     init(hex: String) {
         let hex = hex.trimmingCharacters(in: .whitespacesAndNewlines)
         let scanner = Scanner(string: hex)

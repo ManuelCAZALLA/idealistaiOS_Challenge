@@ -13,7 +13,7 @@ public protocol BaseNetworkProtocol {
     func fetchAdDetail(completion: ((Result<DetailsModel, APIError>) -> Void)?)
 }
 
-// MARK: - API Manager Implementation
+// MARK: - API Manager
 public class BaseNetwork: BaseNetworkProtocol {
     
     private let listURL = URL(string: "https://idealista.github.io/ios-challenge/list.json")!
@@ -21,6 +21,7 @@ public class BaseNetwork: BaseNetworkProtocol {
     private let detailURL = URL(string: "https://idealista.github.io/ios-challenge/detail.json")!
     
     public func fetchAdList(completion: ((Result<[ListModel], APIError>) -> Void)?) {
+        
         var urlRequest = URLRequest(url: listURL)
         urlRequest.httpMethod = "GET"
         
@@ -51,7 +52,7 @@ public class BaseNetwork: BaseNetworkProtocol {
         task.resume()
     }
     
-   public func fetchAdDetail(completion: ((Result<DetailsModel, APIError>) -> Void)?) {
+    public func fetchAdDetail(completion: ((Result<DetailsModel, APIError>) -> Void)?) {
         var urlRequest = URLRequest(url: detailURL)
         urlRequest.httpMethod = "GET"
         
